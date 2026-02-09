@@ -1,0 +1,184 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    display: block;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+font-family: 'Inter', sans-serif;
+background: #ffffff;
+color: #111;
+}
+
+/* NAV */
+.nav {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 32px 48px;
+}
+
+.logo {
+font-size: 28px;
+}
+
+.logo-img {
+height: 60px;
+}
+
+.btn {
+padding: 10px 18px;
+border-radius: 999px;
+border: 1px solid #111;
+text-decoration: none;
+color: #111;
+font-size: 14px;
+max-width: 120px;
+}
+
+/* HERO */
+.hero {
+min-width: 60%;
+}
+
+.hero-content {
+max-width: 900px;
+padding: 80px 48px;
+}
+
+/* TITULO PRINCIPAL */
+.hero-content h1 {
+font-family: 'Playfair Display', serif;
+font-size: clamp(2.5rem, 5vw, 4rem);
+font-weight: 400;
+line-height: 1.2;
+margin-bottom: 32px;
+}
+
+/* TEXTO AZUL SELECCIONADO */
+.highlight {
+    color: #1a73e8;
+background: #cfe3ff;
+padding: 0 6px;
+}
+
+.highlight-second {
+    color: #ff4242;
+background: #ffadad;
+padding: 0 6px;
+}
+
+/* ITALICAS FINAS */
+.hero-content em {
+font-style: italic;
+}
+
+/* SUBTITULO */
+.subtitle {
+max-width: 700px;
+font-size: 15px;
+line-height: 1.6;
+color: #444;
+margin-bottom: 40px;
+}
+
+/* BOTÓN TIPO PILL */
+.pill {
+background: none;
+border: 1px solid #aaa;
+border-radius: 999px;
+padding: 10px 18px;
+font-size: 14px;
+cursor: pointer;
+max-width: 120px;
+}
+
+form{
+    padding: 50px 48px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    text-align: center;
+    width: 800px;
+    border: 1px solid #ccc;
+}
+
+.input-group{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.hero-content h2{
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+label{
+    font-size: 15;
+    margin-bottom: 15px;
+}
+
+input, textarea{
+    padding: 17px 30px;
+    border: 1px solid #494949;
+    border-radius: 25px;
+    margin-bottom: 30px;
+    font-size: 15px;
+    outline: none;
+}
+
+.btn-form {
+padding: 10px 15px;
+border-radius: 999px;
+border: 1px solid #0f3e7c;
+text-decoration: none;
+color: #ffffff;
+background-color: #1a73e8;
+font-size: 16px;
+max-width: 120px;
+cursor: pointer;
+box-shadow: 0 0 20px rgba(26, 115, 232, 0.5);
+}
+
+input::placeholder, textarea::placeholder {
+    color:#aaaaaa9c;
+}
+
+.btn-form:hover {
+background-color: #2081ff;
+}
+
+.skill-icon {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin-right: 30px;
+}
+
+.skill-icon:hover {
+    box-shadow: 0 0 15px rgba(208, 208, 208, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 991px) {
+    .nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero-content {
+        padding: 40px 24px;
+    }
+
+    form {
+        width: 100%;
+        padding: 30px 24px;
+    }
+}
