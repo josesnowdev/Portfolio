@@ -72,6 +72,12 @@ background: #ffadad;
 padding: 0 6px;
 }
 
+.highlight-third {
+    color: #1a73e8;
+background: #cfe3ff;
+padding: 0 6px;
+}
+
 /* ITALICAS FINAS */
 .hero-content em {
 font-style: italic;
@@ -165,6 +171,26 @@ background-color: #2081ff;
     box-shadow: 0 0 15px rgba(208, 208, 208, 0.5);
     transform: scale(1.05);
     transition: all 0.3s ease-in-out;
+}
+
+.project-logo {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    margin-top: 20px;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+}
+
+.caja-descripcion {
+    flex: 3;
+}
+
+.caja-imagen {
+    flex: 1;
 }
 
 @media(max-width: 991px) {
